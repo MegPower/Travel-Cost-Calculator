@@ -127,8 +127,38 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
+            android:layout_weight="1"
             android:background="@android:color/holo_blue_light"
             android:gravity="center"
+            android:padding="@dimen/text_view_padding"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:width="@dimen/activity_vertical_margin" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="5" >
+
+        <TextView
+            android:id="@+id/mpgDisplayTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_light"
+            android:padding="@dimen/text_view_padding"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/gasPriceDisplayTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_light"
+            android:padding="@dimen/text_view_padding"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
     </LinearLayout>

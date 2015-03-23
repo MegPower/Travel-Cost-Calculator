@@ -34,6 +34,8 @@ public class MainActivity extends Activity {
 	private double gasPrice = 0.0;
 	private TextView distanceMilesDisplayTextView;
 	private TextView costDisplayTextView;
+	private TextView mpgDisplayTextView;
+	private TextView gasPriceDisplayTextView;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +47,8 @@ public class MainActivity extends Activity {
 		
 		distanceMilesDisplayTextView = (TextView) findViewById(R.id.distanceMilesDisplayTextView);
 		costDisplayTextView = (TextView) findViewById(R.id.costDisplayTextView);
+		mpgDisplayTextView = (TextView) findViewById(R.id.mpgDisplayTextView);
+		gasPriceDisplayTextView = (TextView) findViewById(R.id.gasPriceDisplayTextView);
 		
 		EditText distanceMilesEditText = (EditText) findViewById(R.id.distanceMilesEditText);
 		distanceMilesEditText.addTextChangedListener(distanceMilesListener);
@@ -71,6 +75,7 @@ public class MainActivity extends Activity {
 		{
 			mpg = progress;
 			updateCost();
+			mpgDisplayTextView.setText(Double.toString(mpg));
 		}//end onProgressChanged
 		
 		@Override
@@ -91,6 +96,7 @@ public class MainActivity extends Activity {
 		{
 			gasPrice = progress;
 			updateCost();
+			gasPriceDisplayTextView.setText(currencyFormat.format(gasPrice));
 		}//end onProgressChanged
 		
 		@Override
