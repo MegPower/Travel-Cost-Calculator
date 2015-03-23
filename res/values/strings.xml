@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MPG Calculator</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="travel_cost_calc_string">Travel Cost Calculator</string>
+    <string name="enter_miles_hint_string">Enter Miles Here</string>
+    <string name="distance_miles_string">Distance (miles)</string>
+    <string name="mpg_text_view">MPG</string>
+    <string name="gas_price_text_view">Gas Price</string>
+    <string name="cost_text_view">Cost</string>
+
+</resources>
